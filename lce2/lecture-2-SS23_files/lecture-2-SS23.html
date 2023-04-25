@@ -33,8 +33,6 @@
   <link href="lecture-2-SS23_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="lecture-2-SS23_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="lecture-2-SS23_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="lecture-2-SS23_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="lecture-2-SS23_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="lecture-2-SS23_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -338,13 +336,13 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 
 </section>
-<section id="section" class="slide level2" data-number="0.1">
-<h2><span class="header-section-number">0.1</span> </h2>
+<section id="section" class="slide level2">
+<h2></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><span style="color:#cc0000"><strong>Big Data</strong></span></p>
 <ul>
-<li><p>What do actually make data “big” ?</p></li>
+<li><p>What do actually make data ‘big’ ?</p></li>
 <li><p>Definitions?</p></li>
 <li><p>Small data ?</p></li>
 <li><p>Complex data, high-dimensional data , high-frequency data, …</p></li>
@@ -360,19 +358,17 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 <div class="absolute" style="top: 500px; left: 20%; ">
 <ul>
-<li>Basics for analyzing data - statistical modeling and testing</li>
+<li>Basics for analyzing data - statistical modelling and testing</li>
 <li>Spatial statistics</li>
 <li>Computational complexity, tools to handle ‘big data’</li>
 </ul>
 </div>
 </section>
-<section id="big-data" class="title-slide slide level1 absolute center" data-number="1" style="color : redtop: 300px; left: 42%; ">
-<h1><span class="header-section-number">1</span> Big data</h1>
-<hr>
+<section id="big-data" class="slide level2 absolute" style="color : redtop: 300px; left: 42%; ">
+<h2>Big data</h2>
 </section>
-
-<section id="what-is-big-data" class="slide level2 smaller" data-number="1.1">
-<h2><span class="header-section-number">1.1</span> What is Big Data?</h2>
+<section id="what-is-big-data" class="slide level2 smaller">
+<h2>What is Big Data?</h2>
 <p>Specific attributes that define Big Data - The Three/Four V’s of Big Data:</p>
 <ul>
 <li><p><span style="color:#cc0000"><strong>Volume</strong></span> :</p>
@@ -393,8 +389,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <li><p><span style="color:#213E12"><strong>2011 McKinsey Global Institute: Machine Learning, Cloud-Computing, Visualizations</strong></span></p></li>
 </ul>
 </section>
-<section id="technical-development" class="slide level2 smaller" data-number="1.2">
-<h2><span class="header-section-number">1.2</span> Technical development</h2>
+<section id="technical-development" class="slide level2 smaller">
+<h2>Technical development</h2>
 <table style="width:100%;">
 <caption><span style="color:##1D4F6B">Development of the storage and transmission of data (Hilbert, Lopez 2011, The World’s Technological Capacity to Store, Communicate, and Compute Information)</span></caption>
 <colgroup>
@@ -459,8 +455,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </tbody>
 </table>
 </section>
-<section id="what-is-big-data-1" class="slide level2 smaller" data-number="1.3">
-<h2><span class="header-section-number">1.3</span> What is Big Data?</h2>
+<section id="what-is-big-data-1" class="slide level2 smaller">
+<h2>What is Big Data?</h2>
 <p><span style="color:#cc0000"><strong>Volume :</strong></span></p>
 <ul>
 <li>If the volume is getting larger than a single computing unit can handle, the data needs to get split into chunks that are small enough to be handled.</li>
@@ -469,8 +465,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <li>Active communication between different computers processing different chunks can become mandatory.</li>
 </ul>
 </section>
-<section id="what-is-big-data-2" class="slide level2 smaller" data-number="1.4">
-<h2><span class="header-section-number">1.4</span> What is Big Data?</h2>
+<section id="what-is-big-data-2" class="slide level2 smaller">
+<h2>What is Big Data?</h2>
 <p><span style="color:#cc0000"><strong>Velocity:</strong></span></p>
 <ul>
 <li>In order to handle the speed, data is going to be fed into various nodes</li>
@@ -479,8 +475,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <li>It is often impossible to store the incoming data; hence, a careful design of what to hold and what to forget is important</li>
 </ul>
 </section>
-<section id="what-is-big-data-3" class="slide level2 smaller" data-number="1.5">
-<h2><span class="header-section-number">1.5</span> What is Big Data?</h2>
+<section id="what-is-big-data-3" class="slide level2 smaller">
+<h2>What is Big Data?</h2>
 <p><span style="color:#cc0000"><strong>Variety:</strong></span></p>
 <ul>
 <li>Data processing usually requires certain formats, data quality, meaning, …</li>
@@ -488,8 +484,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <li>Application-dependent preprocessing must be defined and implemented</li>
 </ul>
 </section>
-<section id="what-is-big-data-4" class="slide level2 smaller" data-number="1.6">
-<h2><span class="header-section-number">1.6</span> What is Big Data?</h2>
+<section id="what-is-big-data-4" class="slide level2 smaller">
+<h2>What is Big Data?</h2>
 <p><span style="color:#cc0000"><strong>Veracity:</strong></span></p>
 <ul>
 <li>Uncertainty due to data inconsistency and/or incompleteness</li>
@@ -498,8 +494,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <li>Latent factors</li>
 </ul>
 </section>
-<section id="what-is-big-data-5" class="slide level2 smaller" data-number="1.7">
-<h2><span class="header-section-number">1.7</span> What is Big Data?</h2>
+<section id="what-is-big-data-5" class="slide level2 smaller">
+<h2>What is Big Data?</h2>
 <p>Alternative definition (similar useful like the previous definitions):</p>
 <p><br> <br> <br></p>
 <div class="absolute" style="top: 300px; left: 35%; ">
@@ -509,35 +505,33 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <p><br> <br> everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it, so everyone claims they are doing it …</p>
 </div>
 </section>
-<section id="from-a-viewpoint-of-a-statistician" class="slide level2 smaller" data-number="1.8">
-<h2><span class="header-section-number">1.8</span> From a viewpoint of a statistician</h2>
+<section id="from-a-viewpoint-of-a-statistician" class="slide level2 smaller">
+<h2>From a viewpoint of a statistician</h2>
 <ul>
-<li>Characteristic,random variable/vector <span class="math inline">\(X = (X_1, X_2, . . . , X_p)'\)</span>
+<li>Characteristic, random variable/vector <span style="color:#cc0000"><em>X = (X1, X2, . . . , Xp)</em></span>
 <ul>
-<li>example: income <span class="math inline">\(X_1\)</span> in Euro, age <span class="math inline">\(X_2\)</span> in years, height <span class="math inline">\(X_3\)</span> in cm, . . . , monthly grocery shopping <span class="math inline">\(X_p\)</span> in Euro</li>
+<li>example: income X1 in Euro, age X2 in years, height X3 in cm, . . . , monthly grocery shopping Xp in Euro</li>
 </ul></li>
-<li>Observations <span style="color:#cc0000"><span class="math inline">\(x = X(ω)\)</span></span>
+<li>Observations <span style="color:#cc0000"><em>x = X(ω)</em></span>
 <ul>
-<li>example: above mentioned characteristics of one specific person, <span class="math inline">\(x = (1000, 20, 165, . . . , 30)′\)</span></li>
+<li>example: above mentioned characteristics of one specific person, x = (1000, 20, 165, . . . , 30)′</li>
 </ul></li>
-<li>Statistical sample <span style="color:#cc0000"><span class="math inline">\(x_1, . . . ,x_n\)</span></span> of size <span class="math inline">\(n\)</span>
+<li>Statistical sample <span style="color:#cc0000"><em>x1, . . . , xn</em></span> of size n
 <ul>
 <li>example: above mentioned characteristics of n different persons</li>
-<li>classical problems: how large must be the sample (<span class="math inline">\(n?\)</span>), representative sample, distribution of <span class="math inline">\(X\)</span>, …?</li>
+<li>classical problems: how large must be the sample (n?), representative sample, distribution of <strong>X</strong>, …?</li>
 </ul></li>
-<li><span class="math inline">\(p\)</span> constant, <span class="math inline">\(p &lt; n\)</span>: classical statistics</li>
-<li><span class="math inline">\(p\)</span> constant, <span class="math inline">\(p &lt; n\)</span>, <span class="math inline">\(n → ∞\)</span>: classical statistics (asymptotic statistics)</li>
-<li><span class="math inline">\(p, n\)</span> very large: computation can get complicated (time consuming, RAM intensive, …)</li>
-<li><span class="math inline">\(p → ∞\)</span> , <span class="math inline">\(n → ∞\)</span> , but <span class="math inline">\(p/n → c\)</span> : high-dimensional statistics (z.B. genome sequences, financial portfolios)</li>
+<li>p constant, p &lt; n: classical statistics</li>
+<li>p constant, p &lt; n, n → ∞: classical statistics (asymptotic statistics)</li>
+<li>p, n very large: computation can get complicated (time consuming, RAM intensive, …)</li>
+<li>p → ∞, n → ∞, but p/n → c: high-dimensional statistics (z.B. genome sequences, financial portfolios)</li>
 </ul>
 </section>
-<section id="examples-of-big-data" class="title-slide slide level1 center" data-number="2" style="text-align: center">
-<h1><span class="header-section-number">2</span> Examples of Big Data</h1>
-<hr>
+<section id="examples-of-big-data" class="slide level2" style="text-align: center">
+<h2>Examples of Big Data</h2>
 </section>
-
-<section id="data-in-higher-dimensional-spaces" class="slide level2" data-number="2.1">
-<h2><span class="header-section-number">2.1</span> Data in higher-dimensional spaces</h2>
+<section id="data-in-higher-dimensional-spaces" class="slide level2">
+<h2>Data in higher-dimensional spaces</h2>
 <div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -547,8 +541,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="examples-of-functional-data" class="slide level2 smaller" data-number="2.2">
-<h2><span class="header-section-number">2.2</span> Examples of functional data</h2>
+<section id="examples-of-functional-data" class="slide level2 smaller">
+<h2>Examples of functional data</h2>
 <ul>
 <li><p>Cancer risk at various ages in European countries</p></li>
 <li><p>Average daily temperature and precipitation records in weather stations across Germany</p></li>
@@ -564,8 +558,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="high-frequency-data" class="slide level2 smaller" data-number="2.3">
-<h2><span class="header-section-number">2.3</span> High-frequency data</h2>
+<section id="high-frequency-data" class="slide level2 smaller">
+<h2>High-frequency data</h2>
 <p><span style="color:#cc0000"><strong>High-frequency data</strong></span> are observations on variables taken daily or at a finer time scale, and are often irregularly spaced over time. <br></p>
 <p>As a result of advanced computational power in recent decades, high frequency data can be accurately collected at an efficient rate for analysis. <br></p>
 <p>Possible issues when dealing with high-frequency data:</p>
@@ -577,8 +571,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <li>High computational loads and related “Big data” problems</li>
 </ul>
 </section>
-<section id="examples-of-high-frequency-data" class="slide level2 smaller" data-number="2.4">
-<h2><span class="header-section-number">2.4</span> Examples of high-frequency data</h2>
+<section id="examples-of-high-frequency-data" class="slide level2 smaller">
+<h2>Examples of high-frequency data</h2>
 <ul>
 <li>Trade and quote data (databases of NYSE, AMEX, NASDAQ etc.)</li>
 <li>Fixed level order book data</li>
@@ -586,9 +580,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <li>Data on order book snapshots</li>
 </ul>
 </section>
-<section id="high-dimensional-data" class="slide level2 smaller" data-number="2.5">
-<h2><span class="header-section-number">2.5</span> High-dimensional data</h2>
-<p><span style="color:#cc0000"><strong>High-dimensional data</strong></span> are observations of a multivariate process <span style="color:#213E12">(<span class="math inline">\(p\)</span> variables/features)</span>, where <span style="color:#213E12"><span class="math inline">\(p\)</span></span> and the number of observations <span style="color:#213E12"><span class="math inline">\(n\)</span></span> approaches infinity, but <span style="color:#213E12"><span class="math inline">\(p/n\)</span></span> approaches <span style="color:#213E12"><span class="math inline">\(a\)</span></span> certain, positive constant <span style="color:#213E12"><span class="math inline">\(c\)</span></span>. <br></p>
+<section id="high-dimensional-data" class="slide level2 smaller">
+<h2>High-dimensional data</h2>
+<p><span style="color:#cc0000"><strong>High-dimensional data</strong></span> are observations of a multivariate process <span style="color:#213E12">(p variables/features)</span>, where <span style="color:#213E12">p</span> and the number of observations <span style="color:#213E12">n</span> approaches infinity, but <span style="color:#213E12">p/n</span> approaches <span style="color:#213E12">a</span> certain, positive constant <span style="color:#213E12">c</span>. <br></p>
 <p>Many classical statistical limit theorems do not hold any more for high-dimensional data. Moreover, dealing with high-dimensional data probably gets computationally complex. <br> Possible issues when dealing with high-dimensional data:</p>
 <ul>
 <li>Statistical inference might not be feasible in the classical way (corrections may be required)</li>
@@ -599,8 +593,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <li>Movie, music (ratings)</li>
 </ul>
 </section>
-<section id="high-dimensional-data-1" class="slide level2" data-number="2.6">
-<h2><span class="header-section-number">2.6</span> High-dimensional data</h2>
+<section id="high-dimensional-data-1" class="slide level2">
+<h2>High-dimensional data</h2>
 <div style="text-align: center">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -610,13 +604,11 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="geospatial-data" class="title-slide slide level1 center" data-number="3" style="text-align: center">
-<h1><span class="header-section-number">3</span> Geospatial Data</h1>
-<hr>
+<section id="geospatial-data" class="slide level2" style="text-align: center">
+<h2>Geospatial Data</h2>
 </section>
-
-<section id="spatial-stochastic-processes" class="slide level2 smaller" data-number="3.1">
-<h2><span class="header-section-number">3.1</span> Spatial stochastic processes</h2>
+<section id="spatial-stochastic-processes" class="slide level2 smaller">
+<h2>Spatial stochastic processes</h2>
 <p>Stochastic processes are (random) observations drawn from data-generating process, which have a certain order in a predefined space, e.g.</p>
 <ul>
 <li>time series (daily returns of a financial asset, acceleration of a car (each second, millisecond, etc.), …)</li>
@@ -625,8 +617,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </ul>
 <p><br> Classical statistical methods, like ordinary-least squares estimators of linear/nonlinear regression models, typically require independent data. Meaning, observations should not depend on other observations. But, …</p>
 </section>
-<section id="theoretical-framework" class="slide level2 smaller" data-number="3.2">
-<h2><span class="header-section-number">3.2</span> Theoretical framework</h2>
+<section id="theoretical-framework" class="slide level2 smaller">
+<h2>Theoretical framework</h2>
 <p>Let <span class="math inline">\(s ∈ R^d\)</span> be a location in the d-dimensional space. This covers</p>
 <ul>
 <li>temporal domains (d = 1)</li>
@@ -636,9 +628,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <p>However, we typically observe data only in a finite space <span class="math inline">\(D ⊂ R^d\)</span>. Here, we consider that D is fixed (non random). <br></p>
 <p>Further, let Z(s) be (univariate) random variable (datum) at location s, i.e., Z(s) ∈ R. Note that one might also consider multivariate variables <span class="math inline">\(Z = (Z_1, . . . , Z_p)′\)</span>. Now, a spatial stochastic process is defined as : <span class="math display">\[{Z(s) : s ∈ D}.\]</span> <br> Moreover, denote the observed process by <span class="math display">\[{z(s) : s ∈ D} .\]</span></p>
 </section>
-<section id="theoretical-framework-1" class="slide level2 smaller" data-number="3.3">
-<h2><span class="header-section-number">3.3</span> Theoretical framework</h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="theoretical-framework-1" class="slide level2 smaller">
+<h2>Theoretical framework</h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -651,7 +643,7 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </div>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -701,9 +693,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="theoretical-framework-2" class="slide level2" data-number="3.4">
-<h2><span class="header-section-number">3.4</span> Theoretical framework</h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="theoretical-framework-2" class="slide level2">
+<h2>Theoretical framework</h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -766,9 +758,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="theoretical-framework-3" class="slide level2 smaller" data-number="3.5">
-<h2><span class="header-section-number">3.5</span> Theoretical framework</h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="theoretical-framework-3" class="slide level2 smaller">
+<h2>Theoretical framework</h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -787,15 +779,13 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="some-properties-of-spatial-processes-assumptions" class="title-slide slide level1 center" data-number="4" style="text-align: center">
-<h1><span class="header-section-number">4</span> Some properties of spatial processes (assumptions)</h1>
-
+<section id="some-properties-of-spatial-processes-assumptions" class="slide level2" style="text-align: center">
+<h2>Some properties of spatial processes (assumptions)</h2>
 </section>
-
-<section id="spatial-dependence" class="slide level2 smaller" data-number="4.1">
-<h2><span class="header-section-number">4.1</span> Spatial dependence</h2>
+<section id="spatial-dependence" class="slide level2 smaller">
+<h2>Spatial dependence</h2>
 <p>Observations are likely to be influenced by observations in the close neighborhood. That means we typically observe similar patterns for observations, which are close in space. This influence usually weakens with increasing distance between the observations.</p>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -811,9 +801,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 <p>There are certain measures describing characteristics/properties of a distribution function <span class="math inline">\(F\)</span>, like the expectation of <span class="math inline">\(F\)</span>, (co-)variance of <span class="math inline">\(F\)</span>, etc. These measures also define the spatial dependence.</p>
 </section>
-<section id="section-1" class="slide level2 smaller" data-number="4.2">
-<h2><span class="header-section-number">4.2</span> </h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="section-1" class="slide level2 smaller">
+<h2></h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -829,7 +819,7 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </div>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -843,9 +833,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="section-2" class="slide level2 smaller" data-number="4.3">
-<h2><span class="header-section-number">4.3</span> </h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="section-2" class="slide level2 smaller">
+<h2></h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -854,14 +844,12 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <p><strong>Stationarity</strong></p>
 </div>
 <div class="callout-content">
-<div style="text-align: center">
-<p>If these two assumptions are fulfilled, the process is called <strong>weakly stationary</strong>.</p>
-</div>
+<p>If these two assumptions are fulfilled, the process is called weakly stationary.</p>
 </div>
 </div>
 </div>
 <p>This means that the distribution of the random process is the same in all locations and the dependence between the random variables does also not depend on the location, but only on the difference between two locations. In the special case that the dependence is the same into all directions (depending only on the distance between two locations, but not the orientation towards each other), the process is isotropic.</p>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -876,19 +864,19 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 <p>One might also assume that <span class="math inline">\(F_{Z(s)}(z) = P(Z(s) &lt; z)\)</span> for all <span class="math inline">\(i\)</span>, then the distribution of <span class="math inline">\({Z(s)}\)</span> is called to be invariant.</p>
 </section>
-<section id="estimation-from-observed-processes" class="slide level2 smaller" data-number="4.4">
-<h2><span class="header-section-number">4.4</span> Estimation from observed processes</h2>
+<section id="estimation-from-observed-processes" class="slide level2 smaller">
+<h2>Estimation from observed processes</h2>
 <p>But, how to see if the underlying distribution of an observed process is (weakly stationary or isotropic?</p>
 
 <img data-src="89eccef1_1.png" width="350" class="r-stretch quarto-figure-center"></section>
-<section id="estimation-of-c" class="slide level2 smaller" data-number="4.5">
-<h2><span class="header-section-number">4.5</span> Estimation of <span class="math inline">\(C(·)\)</span></h2>
+<section id="estimation-of-c" class="slide level2 smaller">
+<h2>Estimation of <span class="math inline">\(C(·)\)</span></h2>
 <p>Looking at <span class="math display">\[Var(Z(s_i)−Z(s_j)) = Var(Z(s_i))+Var(Z(s_j))−2Cov(Z(s_i),Z(s_j)),\]</span> we see that there is a relation between <span class="math inline">\(C(s_i − s_j)\)</span> and <span class="math inline">\(Var(Z(s_i) − Z(s_j))\)</span> Suppose additionally that</p>
 <div style="text-align: center">
 <p><span class="math inline">\(Var(Z(s_i)−Z(s_j))=2γ(s_i−s_j)\)</span> for all <span class="math inline">\(i \neq j\)</span> , and <span class="math inline">\(s_i, s_j ∈D\)</span>.</p>
 </div>
 <p>The function <span class="math inline">\(γ\)</span> is called semivariogram (as <span class="math inline">\(2γ\)</span> is called variogram).</p>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -897,15 +885,15 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <p><strong></strong></p>
 </div>
 <div class="callout-content">
-<p>Obviously, <span class="math inline">\(γ(h) = γ(−h)\)</span> and <span class="math inline">\(γ(0) = 0\)</span>, but <span class="math inline">\(γ(h)\)</span> approaches a certain constant <span class="math inline">\(c0\)</span> as <span class="math inline">\(h\)</span> goes to zero. This constant is the so-called nugget effect.</p>
+<p>Obviously, <span class="math inline">\(γ(h) = γ(−h)\)</span> and <span class="math inline">\(γ(0) = 0\)</span>, but <span class="math inline">\(γ(h)\)</span> approaches a certain constant <span class="math inline">\(c0\)</span> as h goes to zero. This constant is the so-called nugget effect.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="estimation-of-c-1" class="slide level2 smaller" data-number="4.6">
-<h2><span class="header-section-number">4.6</span> Estimation of <span class="math inline">\(C(·)\)</span></h2>
+<section id="estimation-of-c-1" class="slide level2 smaller">
+<h2>Estimation of <span class="math inline">\(C(·)\)</span></h2>
 <p>For modelling spatial dependence, often certain parametric models are estimated for <span class="math inline">\(γ\)</span>.</p>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -924,9 +912,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="estimation-of-c-2" class="slide level2 smaller" data-number="4.7">
-<h2><span class="header-section-number">4.7</span> Estimation of <span class="math inline">\(C(·)\)</span></h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="estimation-of-c-2" class="slide level2 smaller">
+<h2>Estimation of <span class="math inline">\(C(·)\)</span></h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -945,9 +933,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="estimation-of-c-3" class="slide level2 smaller" data-number="4.8">
-<h2><span class="header-section-number">4.8</span> Estimation of <span class="math inline">\(C(·)\)</span></h2>
-<p>But, let us come back to the estimation of <span class="math inline">\(C(·)\)</span>. In general, we denote the estimator of <span class="math inline">\(a\)</span> parameter <span class="math inline">\(a\)</span> by <span class="math inline">\(\hat{a}\)</span>. <br>Common estimation methods are, for instance,</p>
+<section id="estimation-of-c-3" class="slide level2 smaller">
+<h2>Estimation of C(·)</h2>
+<p>But, let us come back to the estimation of <span class="math inline">\(C(·)\)</span>. In general, we denote the estimator of <span class="math inline">\(a\)</span> parameter <span class="math inline">\(a\)</span> by <span class="math inline">\(aˆ\)</span>. <br>Common estimation methods are, for instance,</p>
 <ul>
 <li>Least-Squares estimators</li>
 <li>Maximum-Likelihood estimators</li>
@@ -957,9 +945,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </ul>
 <p>To find a method-of-moments estimator, we simply use sample estimates (sample mean (average), sample variance, …) to estimate the moments of a certain model. If these moments depend on the parameters to be estimated, we get a system of equations, which can be solved with respect to the parameters.</p>
 </section>
-<section id="estimation-of-c-4" class="slide level2 smaller" data-number="4.9">
-<h2><span class="header-section-number">4.9</span> Estimation of <span class="math inline">\(C(·)\)</span></h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="estimation-of-c-4" class="slide level2 smaller">
+<h2>Estimation of <span class="math inline">\(C(·)\)</span></h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -973,9 +961,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="estimation-of-c-5" class="slide level2" data-number="4.10">
-<h2><span class="header-section-number">4.10</span> Estimation of <span class="math inline">\(C(·)\)</span></h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="estimation-of-c-5" class="slide level2 smaller">
+<h2>Estimation of <span class="math inline">\(C(·)\)</span></h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -984,7 +972,6 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 <p><strong>Example: lead concentration</strong></p>
 </div>
 <div class="callout-content">
-<div style="text-align: center">
 <p>Observed spatial process <span class="math inline">\(\{z(s) : s ∈ D\}\)</span>, where <span class="math inline">\(D = \{s_1, . . . , s_5\}\)</span></p>
 <table>
 <thead>
@@ -1031,11 +1018,10 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </div>
-</div>
 </section>
-<section id="estimation-of-c-6" class="slide level2 smaller" data-number="4.11">
-<h2><span class="header-section-number">4.11</span> Estimation of <span class="math inline">\(C(·)\)</span></h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="estimation-of-c-6" class="slide level2 smaller">
+<h2>Estimation of <span class="math inline">\(C(·)\)</span></h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -1112,11 +1098,11 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="estimation-of-c-7" class="slide level2 smaller" data-number="4.12">
-<h2><span class="header-section-number">4.12</span> Estimation of <span class="math inline">\(C(·)\)</span></h2>
+<section id="estimation-of-c-7" class="slide level2 smaller">
+<h2>Estimation of <span class="math inline">\(C(·)\)</span></h2>
 <p>For data, which is not regularly spaced in <span class="math inline">\(R^d\)</span> , we must alter the definition of <span class="math inline">\(Ξ(h)\)</span> , e.g.&nbsp;as follows <span class="math display">\[Ξ(h)=\{(s_i,s_j):h−l&lt;s_i−s_j ≤h+l;i,j=1,...,n\}.\]</span></p>
 <p>Meaning, we allow for a certain tolerance <span class="math inline">\(l\)</span>. However, this also implies that the estimated variogram is “somehow” smoothed.</p>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -1131,10 +1117,10 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="example-1" class="slide level2 smaller" data-number="4.13">
-<h2><span class="header-section-number">4.13</span> Example</h2>
+<section id="example-1" class="slide level2 smaller">
+<h2>Example</h2>
 <p>Consider <span class="math inline">\(C(·)\)</span> as function of <span class="math inline">\(||h||\)</span> instead of h. That is, we now estimate the variogram based on distances between observations. In this case, <span class="math inline">\(Ξ(||h||)\)</span> is a set of all locations with equal distance <span class="math inline">\(||h||\)</span>. Note that one can also introduce a certain tolerance if dealing with irregularly spaced data.</p>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -1202,9 +1188,9 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </section>
-<section id="example-2" class="slide level2" data-number="4.14">
-<h2><span class="header-section-number">4.14</span> Example</h2>
-<div class="callout callout-tip callout-captioned callout-style-simple">
+<section id="example-2" class="slide level2">
+<h2>Example</h2>
+<div class="callout callout-tip callout-captioned callout-style-default">
 <div class="callout-body">
 <div class="callout-caption">
 <div class="callout-icon-container">
@@ -1221,9 +1207,8 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
 </div>
 </div>
 </div>
-<p><img src="logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>Philipp Otto (Leibniz University Hannover)</p>
+<p>otto@ikg.uni-hannover.de</p>
 </div>
 </section>
     </div>
@@ -1236,7 +1221,6 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
   <script src="lecture-2-SS23_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="lecture-2-SS23_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="lecture-2-SS23_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="lecture-2-SS23_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="lecture-2-SS23_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -1253,14 +1237,13 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': false,
-'smaller': true,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true,"theme":"chalkboard"},
-'smaller': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
  
         // Display controls in the bottom right corner
         controls: false,
@@ -1385,7 +1368,7 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
+        transition: 'convex',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -1430,7 +1413,7 @@ Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,

@@ -1,26 +1,17 @@
 ---
 title: "Big Geospatial Data"
+
 author: " Prof.Dr. Philip otto <br>Leibniz Universtity Hannover, Germany<br>April 21, 2023"
 format: 
-  revealjs:
-    footer: "Philipp Otto (Leibniz University Hannover)"
-    logo: logo.png
-    theme: [default, ikg.scss]
-    incremental: false
-    scrollable: true
-    slide-number: true
-    fig-width: 9
-    fig-height: 5
-    smaller: true
-    transition: slide
-    auto-animate: true
-    touch: true
-    toc: false
-    chalkboard: 
-      theme: chalkboard
-callout-appearance: simple
-number-sections: true
-editor: source
+   revealjs:
+     slide-number: c/t
+     transition: convex
+     theme: solarized
+     font-family: "Gill Sans"
+     footer: "otto@ikg.uni-hannover.de"
+     scrollable: true
+     chalk-width : 10
+editor: visual
 ---
 
 ## 
@@ -29,7 +20,7 @@ editor: source
 ::: {.column width="50%"}
 [**Big Data**]{style="color:#cc0000"}
 
--   What do actually make data "big" ?
+-   What do actually make data 'big' ?
 
 -   Definitions?
 
@@ -50,15 +41,13 @@ editor: source
 :::
 
 ::: {.absolute top="500" left="20%"}
--   Basics for analyzing data - statistical modeling and testing
+-   Basics for analyzing data - statistical modelling and testing
 -   Spatial statistics
 -   Computational complexity, tools to handle 'big data'
 :::
 
 ::: {.absolute top="300" left="42%" style="color : red"}
-# Big data
-
-------------------------------------------------------------------------
+## Big data
 :::
 
 ## What is Big Data? {.smaller}
@@ -151,22 +140,20 @@ Alternative definition (similar useful like the previous definitions):
 
 ## From a viewpoint of a statistician {.smaller}
 
--   Characteristic,random variable/vector $X = (X_1, X_2, . . . , X_p)'$
-    -   example: income $X_1$ in Euro, age $X_2$ in years, height $X_3$ in cm, . . . , monthly grocery shopping $X_p$ in Euro
--   Observations [$x = X(ω)$]{style="color:#cc0000"}
-    -   example: above mentioned characteristics of one specific person, $x = (1000, 20, 165, . . . , 30)′$
--   Statistical sample [$x_1, . . . ,x_n$]{style="color:#cc0000"} of size $n$
+-   Characteristic, random variable/vector [*X = (X1, X2, . . . , Xp)*]{style="color:#cc0000"}
+    -   example: income X1 in Euro, age X2 in years, height X3 in cm, . . . , monthly grocery shopping Xp in Euro
+-   Observations [*x = X(ω)*]{style="color:#cc0000"}
+    -   example: above mentioned characteristics of one specific person, x = (1000, 20, 165, . . . , 30)′
+-   Statistical sample [*x1, . . . , xn*]{style="color:#cc0000"} of size n
     -   example: above mentioned characteristics of n different persons
-    -   classical problems: how large must be the sample ($n?$), representative sample, distribution of $X$, ...?
--   $p$ constant, $p < n$: classical statistics
--   $p$ constant, $p < n$, $n → ∞$: classical statistics (asymptotic statistics)
--   $p, n$ very large: computation can get complicated (time consuming, RAM intensive, ...)
--   $p → ∞$ , $n → ∞$ , but $p/n → c$ : high-dimensional statistics (z.B. genome sequences, financial portfolios)
+    -   classical problems: how large must be the sample (n?), representative sample, distribution of **X**, ...?
+-   p constant, p \< n: classical statistics
+-   p constant, p \< n, n → ∞: classical statistics (asymptotic statistics)
+-   p, n very large: computation can get complicated (time consuming, RAM intensive, ...)
+-   p → ∞, n → ∞, but p/n → c: high-dimensional statistics (z.B. genome sequences, financial portfolios)
 
 ::: {style="text-align: center"}
-# Examples of Big Data
-
-------------------------------------------------------------------------
+## Examples of Big Data
 :::
 
 ## Data in higher-dimensional spaces
@@ -212,7 +199,7 @@ Possible issues when dealing with high-frequency data:
 
 ## High-dimensional data {.smaller}
 
-[**High-dimensional data**]{style="color:#cc0000"} are observations of a multivariate process [($p$ variables/features)]{style="color:#213E12"}, where [$p$]{style="color:#213E12"} and the number of observations [$n$]{style="color:#213E12"} approaches infinity, but [$p/n$]{style="color:#213E12"} approaches [$a$]{style="color:#213E12"} certain, positive constant [$c$]{style="color:#213E12"}. <br>
+[**High-dimensional data**]{style="color:#cc0000"} are observations of a multivariate process [(p variables/features)]{style="color:#213E12"}, where [p]{style="color:#213E12"} and the number of observations [n]{style="color:#213E12"} approaches infinity, but [p/n]{style="color:#213E12"} approaches [a]{style="color:#213E12"} certain, positive constant [c]{style="color:#213E12"}. <br>
 
 Many classical statistical limit theorems do not hold any more for high-dimensional data. Moreover, dealing with high-dimensional data probably gets computationally complex. <br> Possible issues when dealing with high-dimensional data:
 
@@ -230,9 +217,7 @@ Many classical statistical limit theorems do not hold any more for high-dimensio
 :::
 
 ::: {style="text-align: center"}
-# Geospatial Data
-
-------------------------------------------------------------------------
+## Geospatial Data
 :::
 
 ## Spatial stochastic processes {.smaller}
@@ -265,7 +250,7 @@ Further, let Z(s) be (univariate) random variable (datum) at location s, i.e., Z
 Lead concentration at several location along the river Meuse
 :::
 
-::: {.callout-tip style="text-align: center"}
+::: callout-tip
 ## Lead concentration
 
 Spatial locations $s_1, . . . , s_5$ with $s_i = (s_{i,x}, s_{i,y})′$
@@ -310,10 +295,8 @@ Plotting the observations according to their location in the Euclidean space, th
 :::
 
 ::: {style="text-align: center"}
-# Some properties of spatial processes (assumptions)
+## Some properties of spatial processes (assumptions)
 :::
-
-------------------------------------------------------------------------
 
 ## Spatial dependence {.smaller}
 
@@ -352,9 +335,7 @@ Spatial dependence is characterized by $$Cov(Z(si),Z(sj)) $$ for $i \neq j$. We 
 ::: callout-tip
 ## Stationarity
 
-::: {style="text-align: center"}
-If these two assumptions are fulfilled, the process is called **weakly stationary**.
-:::
+If these two assumptions are fulfilled, the process is called weakly stationary.
 :::
 
 This means that the distribution of the random process is the same in all locations and the dependence between the random variables does also not depend on the location, but only on the difference between two locations. In the special case that the dependence is the same into all directions (depending only on the distance between two locations, but not the orientation towards each other), the process is isotropic.
@@ -386,14 +367,14 @@ The function $γ$ is called semivariogram (as $2γ$ is called variogram).
 ::: callout-tip
 ## 
 
-Obviously, $γ(h) = γ(−h)$ and $γ(0) = 0$, but $γ(h)$ approaches a certain constant $c0$ as $h$ goes to zero. This constant is the so-called nugget effect.
+Obviously, $γ(h) = γ(−h)$ and $γ(0) = 0$, but $γ(h)$ approaches a certain constant $c0$ as h goes to zero. This constant is the so-called nugget effect.
 :::
 
 ## Estimation of $C(·)$ {.smaller}
 
 For modelling spatial dependence, often certain parametric models are estimated for $γ$.
 
-::: {.callout-tip style="text-align: center"}
+::: callout-tip
 ## Example of an variogram model
 
 ![Source: SAS support,online](lecture-2-SS23_files/mportant-characteristics-of-a-semivariogram-The-nugget-sill-and-range-are-commonly.png){fig-align="center" width="420"}
@@ -401,15 +382,15 @@ For modelling spatial dependence, often certain parametric models are estimated 
 
 ## Estimation of $C(·)$ {.smaller}
 
-::: {.callout-tip style="text-align: center"}
+::: callout-tip
 ## Variogram models
 
 ![Hartkamp, A. D., De Beurs, K., Stein, A., & White, J. W. (1999). Interpolation techniques for climate variables](lecture-2-SS23_files/Checkliste.jpeg){fig-align="center"}
 :::
 
-## Estimation of $C(·)$ {.smaller}
+## Estimation of C(·) {.smaller}
 
-But, let us come back to the estimation of $C(·)$. In general, we denote the estimator of $a$ parameter $a$ by $\hat{a}$. <br>Common estimation methods are, for instance,
+But, let us come back to the estimation of $C(·)$. In general, we denote the estimator of $a$ parameter $a$ by $aˆ$. <br>Common estimation methods are, for instance,
 
 -   Least-Squares estimators
 -   Maximum-Likelihood estimators
@@ -427,12 +408,11 @@ To find a method-of-moments estimator, we simply use sample estimates (sample me
 An estimator of $γ$ is given by $$2\hatγ(h) = \frac{1}{|\Xi(h)|} \sum_{\Xi(h)}(z(s_i) − z(s_j))^2$$ where $\Xi(h)$ is the set of all observations, where $s_i − s_j = h$, i.e., $$\Xi(h)=\{(s_i,s_j):s_i−s_j =h;i,j=1,...,n\}.$$
 :::
 
-## Estimation of $C(·)$
+## Estimation of $C(·)$ {.smaller}
 
 ::: callout-tip
 ## Example: lead concentration
 
-::: {style="text-align: center"}
 Observed spatial process $\{z(s) : s ∈ D\}$, where $D = \{s_1, . . . , s_5\}$
 
 | $i$ | $s_{i,x}$ | $s_{i,y}$ | $z(s_i)$ |
@@ -442,7 +422,6 @@ Observed spatial process $\{z(s) : s ∈ D\}$, where $D = \{s_1, . . . , s_5\}$
 |  3  |  181165   |  333537   |   199    |
 |  4  |  181298   |  333484   |   116    |
 |  5  |  181307   |  333330   |   117    |
-:::
 :::
 
 ## Estimation of $C(·)$ {.smaller}
@@ -497,8 +476,12 @@ Distances $||h||_2$
 
 ## Example
 
-::: {.callout-tip style="text-align: center"}
+::: callout-tip
 ## Example: lead concentration $\hat{γ}$
 
 ![](lecture-2-SS23_files/unnamed-chunk-23-1.png){fig-align="center" width="400"}
 :::
+
+
+
+
